@@ -10,6 +10,44 @@
 @media (min-width: 768px) {
   .page-header {
     min-height: 100vh;
+
   }
 
+}
+
+/*           EFFETS SUR LES IMAGES DU PORTFOLIO       */
+figure{
+  overflow: hidden;
+  position:relative;
+  margin:0;
+}
+
+figure:hover .img-effect{
+  transform: scale(1.25);
+  transition: 1s;
+  opacity:0.1;
+}
+/*.img-effect{
+  transition: 1s;
+}*/
+
+figure a{
+  display: block;
+  overflow: hidden;
+  background: black;
+}
+
+figcaption{
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  color: white;
+  opacity: 0;
+  transition: 1s;
+  transform: translateX(50px) scale(2);
+}
+
+figure:hover figcaption{
+  opacity: 1;
+  transform: translateY(0);
 }
